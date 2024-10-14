@@ -1,5 +1,28 @@
 {
   "dependencies": {
+    "com.cysharp.r3": {
+      "version": "1.2.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.imgui": "1.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "com.cysharp.unitask": {
+      "version": "2.5.8",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.cysharp.zstring": {
+      "version": "2.5.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.unity.collab-proxy": {
       "version": "2.5.2",
       "depth": 0,
@@ -134,6 +157,194 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "documentation-comment-id-viewer": {
+      "version": "file:documentation-comment-id-viewer",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "org.nuget.microsoft.codeanalysis.csharp": "4.11.0"
+      }
+    },
+    "org.nuget.microsoft.bcl.asyncinterfaces": {
+      "version": "6.0.0",
+      "depth": 3,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.microsoft.bcl.timeprovider": {
+      "version": "8.0.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.microsoft.bcl.asyncinterfaces": "6.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.microsoft.codeanalysis.analyzers": {
+      "version": "3.3.4",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.microsoft.codeanalysis.common": {
+      "version": "4.11.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.microsoft.codeanalysis.analyzers": "3.3.4",
+        "org.nuget.system.collections.immutable": "8.0.0",
+        "org.nuget.system.memory": "4.5.5",
+        "org.nuget.system.reflection.metadata": "8.0.0",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0",
+        "org.nuget.system.text.encoding.codepages": "7.0.0",
+        "org.nuget.system.threading.tasks.extensions": "4.5.4",
+        "org.nuget.system.buffers": "4.5.1",
+        "org.nuget.system.numerics.vectors": "4.5.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.microsoft.codeanalysis.csharp": {
+      "version": "4.11.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.microsoft.codeanalysis.common": "4.11.0",
+        "org.nuget.microsoft.codeanalysis.analyzers": "3.3.4",
+        "org.nuget.system.buffers": "4.5.1",
+        "org.nuget.system.collections.immutable": "8.0.0",
+        "org.nuget.system.memory": "4.5.5",
+        "org.nuget.system.numerics.vectors": "4.5.0",
+        "org.nuget.system.reflection.metadata": "8.0.0",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0",
+        "org.nuget.system.text.encoding.codepages": "7.0.0",
+        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.observablecollections": {
+      "version": "2.1.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.memory": "4.5.4"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.observablecollections.r3": {
+      "version": "2.1.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.observablecollections": "2.1.4",
+        "org.nuget.r3": "1.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.r3": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.microsoft.bcl.timeprovider": "8.0.0",
+        "org.nuget.system.buffers": "4.5.1",
+        "org.nuget.system.componentmodel.annotations": "5.0.0",
+        "org.nuget.system.memory": "4.5.5",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0",
+        "org.nuget.system.threading.channels": "8.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.buffers": {
+      "version": "4.5.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.collections.immutable": {
+      "version": "8.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.memory": "4.5.5",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.componentmodel.annotations": {
+      "version": "5.0.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.memory": {
+      "version": "4.5.5",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.buffers": "4.5.1",
+        "org.nuget.system.numerics.vectors": "4.4.0",
+        "org.nuget.system.runtime.compilerservices.unsafe": "4.5.3"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.numerics.vectors": {
+      "version": "4.5.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.reflection.metadata": {
+      "version": "8.0.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.collections.immutable": "8.0.0",
+        "org.nuget.system.memory": "4.5.5"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.runtime.compilerservices.unsafe": {
+      "version": "6.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.text.encoding.codepages": {
+      "version": "7.0.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.memory": "4.5.5",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.threading.channels": {
+      "version": "8.0.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "org.nuget.system.threading.tasks.extensions": {
+      "version": "4.5.4",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.runtime.compilerservices.unsafe": "4.5.3"
+      },
+      "url": "https://package.openupm.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

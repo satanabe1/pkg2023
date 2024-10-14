@@ -1,5 +1,19 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.openupm",
+        "com.cysharp",
+        "org.nuget"
+      ]
+    }
+  ],
   "dependencies": {
+    "com.cysharp.r3": "1.2.5",
+    "com.cysharp.unitask": "2.5.8",
+    "com.cysharp.zstring": "2.5.1",
     "com.unity.collab-proxy": "2.5.2",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",
@@ -36,6 +50,9 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
+    "com.unity.modules.xr": "1.0.0",
+    "org.nuget.observablecollections": "2.1.4",
+    "org.nuget.observablecollections.r3": "2.1.4",
+    "org.nuget.system.collections.immutable": "8.0.0"
   }
 }
