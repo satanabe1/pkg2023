@@ -163,6 +163,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
+        "com.cysharp.zstring": "2.5.1",
         "org.nuget.microsoft.codeanalysis.csharp": "4.11.0"
       }
     },

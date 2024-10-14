@@ -1,0 +1,3 @@
+[submodule "Packages/documentation-comment-id-viewer"]
+	path = Packages/documentation-comment-id-viewer
+	url = git@github.com:satanabe1/documentation-comment-id-viewer.git
