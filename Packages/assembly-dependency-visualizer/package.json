@@ -1,0 +1,10 @@
+{
+  "name": "assembly-dependency-visualizer",
+  "version": "0.0.1",
+  "displayName": "assembly-dependency-visualizer",
+  "unity": "2023.1",
+  "description": "assembly-dependency-visualizer",
+  "dependencies": {
+    "org.nuget.microsoft.codeanalysis.csharp": "4.11.0"
+  }
+}
