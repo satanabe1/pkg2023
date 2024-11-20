@@ -48,7 +48,7 @@ public class AssemblyDependencyVisualizerWindow : EditorWindow
             .SelectMany(x => x.ReferencedAssemblySymbols.SelectMany(y => y.Modules));
 
         var sb = new StringBuilder();
-        sb.AppendLine("graph TD;");
+        sb.AppendLine("graph LR;");
         var outputRegex = string.IsNullOrWhiteSpace(_outputRegex) ? null : new Regex(_outputRegex);
         var outputExcludeRegex = string.IsNullOrWhiteSpace(_outputExcludeRegex) ? null : new Regex(_outputExcludeRegex);
         foreach (var module in modules)
