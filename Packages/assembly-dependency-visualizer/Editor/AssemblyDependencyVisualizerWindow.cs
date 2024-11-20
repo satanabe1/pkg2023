@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -26,7 +27,11 @@ public class AssemblyDependencyVisualizerWindow : EditorWindow
         _outputExcludeRegex = EditorGUILayout.TextField("Output Exclude Regex", _outputExcludeRegex);
         if (GUILayout.Button("Do"))
         {
-            var result = ToMermaidFlowChart();
+            var sb = new StringBuilder();
+            sb.AppendLine("```mermaid");
+            sb.AppendLine(ToMermaidFlowChart());
+            sb.AppendLine("```");
+            var result = sb.ToString();
             Debug.Log(result);
             GUIUtility.systemCopyBuffer = result;
         }
@@ -42,8 +47,7 @@ public class AssemblyDependencyVisualizerWindow : EditorWindow
         var modules = ListModuleSymbols(assemblies)
             .SelectMany(x => x.ReferencedAssemblySymbols.SelectMany(y => y.Modules));
 
-        var sb = new System.Text.StringBuilder();
-        sb.AppendLine("```mermaid");
+        var sb = new StringBuilder();
         sb.AppendLine("graph TD;");
         var outputRegex = string.IsNullOrWhiteSpace(_outputRegex) ? null : new Regex(_outputRegex);
         var outputExcludeRegex = string.IsNullOrWhiteSpace(_outputExcludeRegex) ? null : new Regex(_outputExcludeRegex);
@@ -59,8 +63,6 @@ public class AssemblyDependencyVisualizerWindow : EditorWindow
                 sb.AppendLine($"  {moduleName} --> {referencedModuleName};");
             }
         }
-
-        sb.AppendLine("```");
 
         return sb.ToString();
     }
