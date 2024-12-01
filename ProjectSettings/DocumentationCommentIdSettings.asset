@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 538a1455ddda493ca4228b6112efad18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetDllNameRegexes: []
+  targetDllNameRegexes:
+  - R3
