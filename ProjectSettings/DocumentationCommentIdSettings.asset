@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetDllNameRegexes:
-  - R3
+  - UniTask
